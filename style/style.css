@@ -11,28 +11,70 @@ html, body{
     margin: 0; box-sizing: border-box;
     font-family: "Kumbh sans", sans-serif;
     font-family: "Quicksand", sans-serif; 
-    /*background: var(--Dark-cyan);*/
+}
+
+body{
+    background: var(--Dark-cyan);
+    height: 100vh;
+    background-image: url(../assets/bg-pattern-bottom.svg);
+    background-position: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .profilecard{
     border-radius: 8px;
     width: 85%;
     margin: 0 auto;
+    background-color: #f5f5dc;
+    overflow: hidden;
 }
 
 .profilecardtop{
     background-image: url("../assets/bg-pattern-card.svg");
+    position: relative;
+    height: 120px;
+    display: flex;
+    justify-content: center;
 }
 
 .profilecardtop img{
     border-radius: 50%;
     border: 5px solid white;
+    position: absolute;
+    bottom: -53px;
+}
+
+.profilecardbottom__datosperfil > div{
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.profilecardbottom__datosperfil > div span:nth-child(1){
+    font-size: var(--Name-stats-Font-size);
+    font-weight: 700px;
+    margin-right: 8px;
+}
+
+.profilecardbottom__datosperfil > div span:nth-child(2){
+    font-size: var(--Name-stats-Font-size);
+    font-weight: 400px;
+    color: var(--Dark-gray);
+}
+
+.profilecardbottom__datosperfil > p{
+    text-align: center;
+    color: var(--Dark-gray);
+    font-size: 14px;
 }
 
 .profilecardbottom__datoseguidores{
     display: flex;
     justify-content: space-around;
-    border-top: 1px solid var(--Dark-grayish-blue);
+    border-top: 1px solid var(--Dark-gray);
 }
 
 .profilecardbottom__datoseguidores div p:nth-child(1){
